@@ -18,8 +18,7 @@ export const handleEdit = async (
   setValidUntil: React.Dispatch<React.SetStateAction<string>>
 ) => {
   try {
-    const herokuFront = "https://immuniebackend-55e5196ab5db.herokuapp.com";
-    //const localhost = "http://localhost:8000";
+    const herokuFront = "https://backendimmunie-97b7adec259a.herokuapp.com";
     const formData = new FormData();
     formData.append("nome", novoNome);
     formData.append("email", novoEmail);
