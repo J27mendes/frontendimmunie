@@ -5,9 +5,9 @@ dotenv.config();
 
 export const handleGetEmail = async (email: string) => {
   try {
-    //const herokuFront = "https://backendimmunie-97b7adec259a.herokuapp.com";
+    const herokuFront = "https://backendimmunie-97b7adec259a.herokuapp.com";
     const response = await axios.get<{ exists: boolean; userEmail: string }>(
-      `${process.env.API_BACKEND}/carteirinha/${email}`
+      `${herokuFront}/carteirinha/${email}`
     );
     console.log(response.status);
     return {
