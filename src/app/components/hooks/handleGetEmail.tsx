@@ -9,7 +9,6 @@ export const handleGetEmail = async (email: string) => {
     const response = await axios.get<{ exists: boolean; userEmail: string }>(
       `${herokuFront}/carteirinha/${email}`
     );
-    console.log(response.status);
     return {
       exists: response.data.exists,
       serverResponse:
