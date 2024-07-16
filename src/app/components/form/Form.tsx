@@ -9,6 +9,7 @@ import { handlePhotoChange } from "../hooks/handlePhotoChange";
 import { handleSubmit } from "../hooks/handleSubmit";
 import { handleEdit } from "../hooks/handleEdit";
 import { handleGetEmail } from "../hooks/handleGetEmail";
+import Button from "../button/Button";
 
 const Form = () => {
   const [nome, setNome] = useState("");
@@ -202,11 +203,12 @@ const Form = () => {
               required
               value={email}
               onChange={handleChangeEmail}
-              className={`w-full px-3 mb-10 bg-transparent border-none focus:outline-none font-semibold text-2xl text-center ${
+              className={`w-full px-3 mb-4 bg-transparent border-none focus:outline-none font-semibold text-2xl text-center ${
                 showEmailField ? "" : "hidden"
               }`}
             />
           </div>
+          <Button />
           <div className="mb-4">
             <p className="text-sm font-semibold text-center">
               Acesso válido até
@@ -235,9 +237,6 @@ const Form = () => {
               </p>
             </div>
           )}
-          <button type="submit" className="hidden">
-            Enviar
-          </button>
         </form>
       </div>
     </div>
