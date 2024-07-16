@@ -15,7 +15,6 @@ export const handleGetEmail = async (email: string) => {
         response.status === 200 ? "Email encontrado." : "Resposta vazia",
     };
   } catch (error) {
-    console.error("Erro ao buscar email:", error);
-    throw new Error(`Erro ao buscar email - ${error}`);
+    throw new Error(`Erro ao buscar email`);
   }
 };

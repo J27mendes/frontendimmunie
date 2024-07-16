@@ -50,11 +50,15 @@ export const handleEdit = async (
         setPreviewImage(imageUrl);
       }
     } else {
-      console.error("Erro ao atualizar dados - Resposta vazia");
-      setServerResponse("Erro ao atualizar dados - Resposta vazia");
+      setServerResponse("Erro ao atualizar dados");
+      setTimeout(() => {
+        setServerResponse("");
+      }, 10000);
     }
   } catch (error) {
-    console.error("Erro ao enviar formulário:", error);
-    setServerResponse("Erro ao enviar formulário - " + error);
+    setServerResponse("Erro ao enviar formulário - ");
+    setTimeout(() => {
+      setServerResponse("");
+    }, 10000);
   }
 };

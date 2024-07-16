@@ -42,11 +42,15 @@ export const handleSubmit = async (
 
       setValidUntil(dataFormatada);
     } else {
-      console.error("Erro ao enviar formulário - Resposta vazia");
-      setServerResponse("Erro ao enviar formulário - Resposta vazia");
+      setServerResponse("Erro ao enviar formulário");
+      setTimeout(() => {
+        setServerResponse("");
+      }, 10000);
     }
   } catch (error) {
-    console.error("Erro ao enviar formulário:", error);
-    setServerResponse("Erro ao enviar formulário - " + error);
+    setServerResponse("Erro ao enviar formulário");
+    setTimeout(() => {
+      setServerResponse("");
+    }, 10000);
   }
 };

@@ -39,7 +39,7 @@ const Form = () => {
 
   const handleChangeEmail = (event: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(event.target.value);
-    setServerResponse(""); // Limpa a mensagem de erro ou sucesso ao alterar o email
+    setServerResponse("");
   };
 
   const handleChangePhoto = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -113,7 +113,6 @@ const Form = () => {
         setEmail("");
       }
     } catch (error) {
-      console.error("Erro ao enviar formulário:", error);
       setServerResponse(`Erro ao enviar formulário - ${error}`);
       setErrorMessage(`Erro ao enviar formulário - ${error}`);
     }
