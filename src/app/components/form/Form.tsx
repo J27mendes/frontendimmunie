@@ -183,7 +183,7 @@ const Form = () => {
               required
               value={nome}
               onChange={handleChangeNome}
-              className="w-full px-3 mb-2 bg-transparent border-none focus:outline-none font-semibold text-4xl text-center"
+              className="w-full px-3 mb-2 bg-transparent border-none focus:outline-none font-semibold text-4xl text-center text-black"
             />
           </div>
           <div className="mb-2 relative">
@@ -203,7 +203,7 @@ const Form = () => {
               required
               value={email}
               onChange={handleChangeEmail}
-              className={`w-full px-3 mb-4 bg-transparent border-none focus:outline-none font-semibold text-2xl text-center ${
+              className={`w-full px-3 mb-4 bg-transparent border-none focus:outline-none font-semibold text-2xl text-center text-black ${
                 showEmailField ? "" : "hidden"
               }`}
             />
