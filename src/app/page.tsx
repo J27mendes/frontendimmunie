@@ -6,7 +6,7 @@ import Form from "./components/form/Form";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-customColor">
       <Header />
       <Divider />
       <Form />
