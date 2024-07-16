@@ -7,12 +7,23 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
     extend: {
       colors: {
-        customColor: "rgb(239, 243, 237)",
+        transparent: "transparent",
+        black: "#000",
+        white: "#fff",
+        green: "#eff7ed",
       },
     },
   },
   plugins: [],
 };
+
 export default config;
