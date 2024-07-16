@@ -19,7 +19,6 @@ const config: Config = {
         transparent: "transparent",
         black: "#000",
         white: "#fff",
-        green: "#eff7ed",
       },
     },
   },

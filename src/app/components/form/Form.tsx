@@ -119,7 +119,7 @@ const Form = () => {
   };
 
   return (
-    <div className="flex justify-center items-center mt-4">
+    <div className="flex justify-center items-center mt-4 bg-slate-100">
       <div className="max-w-md w-full p-6 rounded-md">
         <form onSubmit={handleFormSubmit} className="space-y-4">
           <div className="mb-10">
@@ -135,7 +135,7 @@ const Form = () => {
                 {previewImage ? (
                   <img
                     src={previewImage}
-                    alt="Preview"
+                    alt="Icone Passe Verde"
                     width={200}
                     height={200}
                     className="h-32 w-32 object-cover rounded-full cursor-pointer"
@@ -143,7 +143,7 @@ const Form = () => {
                 ) : (
                   <Image
                     src={defaultImage}
-                    alt="Preview"
+                    alt="sua imagem"
                     width={200}
                     height={200}
                     className="h-32 w-32 object-cover rounded-full cursor-pointer"
